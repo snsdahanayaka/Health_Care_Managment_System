@@ -13,7 +13,7 @@ const inquirySchema = new Schema({
         type: String,
         required: true
     },
-
+    ///sandali
     phone: {
         type: String,
         required: true
