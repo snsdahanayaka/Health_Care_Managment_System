@@ -12,7 +12,7 @@ export default function Inquiry() {
 
   function sendData(e) {
     e.preventDefault();
-    alert("Insert");
+    // alert("Insert");
 
     const newInquiry = {
       name,
@@ -22,11 +22,14 @@ export default function Inquiry() {
       message
     }
 
-    axios.post("http//localhost:8070/Inquiry/add", newInquiry).then(() => {
+    // alert(Object.entries(newInquiry));
+    // console.log();
+    axios.post("http://localhost:8070/inquiry/add", newInquiry).then(() => {
       alert("Inquiry Created")
     }).catch((err) => {
       alert(err)
-    })
+    });
+    
 
   }
 

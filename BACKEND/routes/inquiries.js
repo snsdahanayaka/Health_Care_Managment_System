@@ -5,8 +5,8 @@ router.route("/add").post((req, res) => {
     const name = req.body.name;
     const email = req.body.email;
     const phone = req.body.phone;
-    const type = req.body.type; // Corrected
-    const message = req.body.message; // Corrected
+    const type = req.body.type;
+    const message = req.body.message;
 
     const newInquiry = new Inquiry({
         name,
@@ -15,7 +15,7 @@ router.route("/add").post((req, res) => {
         type,
         message
     });
-
+    console.log(Object.entries(newInquiry));
     newInquiry.save().then(() => {
         res.json("Successfully Created");
     }).catch((err) => {

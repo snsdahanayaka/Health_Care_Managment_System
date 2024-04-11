@@ -32,7 +32,7 @@ connection.on("error", (err) => {
 const inquiryRouter = require("./routes/inquiries.js")
 
 
-app.use("/Inquiry", inquiryRouter);
+app.use("/inquiry", inquiryRouter);
 
 app.listen(PORT, () => {
     console.log(`Server is up and running on port number: ${PORT}`);
