@@ -1,0 +1,132 @@
+/* Table styles */
+.table-container {
+    width: 80%; /* Adjust the width of the table container */
+    margin: 0 auto; /* Center the table horizontally */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Button container */
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Distribute buttons evenly */
+  }
+  
+  /* Button styles */
+  .button {
+    color: #fff;
+    padding: 8px 16px; /* Adjust button padding */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button.view {
+    background-color: #28a745; /* Green color for view button */
+  }
+  
+  .button.update {
+    background-color: #007bff; /* Blue color for update button */
+  }
+  
+  .button.delete {
+    background-color: #dc3545; /* Red color for delete button */
+  }
+  
+  .button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Modal styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #f9f9f9; /* Light gray background for modal content */
+    margin: 10% auto; /* Adjust margin to center vertically */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* Close button for modal */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #modal-view{
+    display: none !important;
+  }
+  /* Modal styles */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 63%; /* Set width to cover 50% of the page */
+    
+  }
+  
+  /* Close button for modal */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Add blue color for generate report button */
+  .button.generate-report {
+    background-color: #007bff; /* Blue color for generate report button */
+  }
+  
