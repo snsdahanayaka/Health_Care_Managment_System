@@ -1,0 +1,74 @@
+/* Center the content */
+.App {
+    text-align: center;
+}
+
+/* Link styles */
+.App-link {
+    color: #61dafb;
+}
+
+/* Background styles */
+.background-container {
+    background-image: url('https://img.freepik.com/free-photo/blue-psychedelic-paper-shapes_23-2149378252.jpg?w=1060&t=st=1713417461~exp=1713418061~hmac=68eb9069ed6ed7ea2702d483b1d7924e85f81a34ed18bc5e572f599bd3a8d77e');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Adjust to fit your content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styles */
+.container {
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Form background color */
+}
+
+/* Form label styles */
+.form-label {
+    font-weight: bold;
+    display: flex !important;
+}
+
+/* Form control styles */
+.form-control,
+.form-select {
+    width: calc(100% - 16px); /* Subtract padding from width */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover styles */
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px); /* Move up by 3 pixels */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Textarea styles */
+textarea {
+    width: calc(100% - 16px); /* Subtract padding from width */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
