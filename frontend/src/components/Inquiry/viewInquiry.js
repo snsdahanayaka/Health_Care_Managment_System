@@ -5,6 +5,8 @@ import { saveAs } from 'file-saver';
 import "../../css/view.css";
 
 export default function Inquiry() {
+  const navigate = useNavigate();
+
 
   const [inquiries, setInquiries] = useState([]);
   const [selectedInquiry, setSelectedInquiry] = useState(null);

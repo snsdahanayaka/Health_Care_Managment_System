@@ -10,7 +10,6 @@
 
 /* Background styles */
 .background-container {
-    background-image: url('https://img.freepik.com/free-photo/blue-psychedelic-paper-shapes_23-2149378252.jpg?w=1060&t=st=1713417461~exp=1713418061~hmac=68eb9069ed6ed7ea2702d483b1d7924e85f81a34ed18bc5e572f599bd3a8d77e');
     background-size: cover;
     background-position: center;
     min-height: 100vh; /* Adjust to fit your content */
@@ -19,13 +18,33 @@
     align-items: center;
 }
 
+.form-wrapper {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
 /* Container styles */
 .container {
-    max-width: 500px;
+    max-width: 600px;
+    padding-bottom: 40px;
+    padding-top: 40px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9; /* Form background color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .15); /* Add shadow */
+    margin-right: auto; /* Add margin to the right */
+    margin-left: 40px; /* Add margin to the left */
+    
+}
+
+.row {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
 }
 
 /* Form label styles */
@@ -43,15 +62,16 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    border-color: #00ffff;
 }
 
 /* Button styles */
 .btn-primary {
-    background-color: #007bff;
+    background-color: #19314e;
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 4px;
+    border-radius: 17px;
     cursor: pointer;
     transition: background-color 0.3s ease; /* Smooth transition */
 }
@@ -72,3 +92,4 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
 }
+

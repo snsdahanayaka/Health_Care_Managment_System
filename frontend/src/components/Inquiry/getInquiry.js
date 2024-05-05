@@ -34,7 +34,7 @@ export default function Inquiry() {
       message
     }
 
-    axios.post("http://localhost:8080/inquiry/add", newInquiry)
+    axios.post("http://localhost:8070/inquiry/add", newInquiry)
       .then(() => {
         alert("Inquiry Created");
         setName("");
@@ -63,10 +63,17 @@ export default function Inquiry() {
     setEmailError("");
   };
 
+
   return (
-    <div className="background-container">
+
+        <div className="background">
+        <img src="https://expertcourtreports.co.uk/wp-content/uploads/2022/05/Pharmacy.jpg" alt="Upload Prescription Illustration" className="prescription-image" style={{display:''}}/>
+      
       <div className="container">
-        <form onSubmit={sendData}>
+      <div className="row">
+      <div className="form-wrapper"> {/* Add a wrapper div for the form */}
+      <h1>Inquiry Now </h1>
+        <form onSubmit={sendData} >
           <div className="mb-3">
             <label htmlFor="name" className="form-label">Name</label>
             <input type="text" className="form-control" id="name" value={name} onChange={(e) => setName(e.target.value)} />
@@ -115,6 +122,23 @@ export default function Inquiry() {
 
           <button type="submit" className="btn btn-primary">Submit</button>
         </form>
+      </div>
+      </div>
+      </div><br></br><br></br>
+
+      <div className="">
+
+      </div>
+      
+      <div className="map" style={{ width: '100%' }}>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7450256430325!2d79.85714469999999!3d6.921054499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2591492f40fb9%3A0x2ecd89ca1174f91f!2sRatnam%20Hospital!5e0!3m2!1sen!2slk!4v1714821181728!5m2!1sen!2slk"
+          width="100%"
+          height="450"
+          style={{ border: "0" }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </div>
   );
