@@ -8,11 +8,23 @@
     color: #61dafb;
 }
 
-/* Background styles */
-.background-container {
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh; /* Adjust to fit your content */
+.background {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.form-overlay {
+    position: absolute;
+    top: 50px; /* Adjust top margin as needed */
+    left: 0;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,14 +32,12 @@
 
 .form-wrapper {
     text-align: left;
-    margin-bottom: 40px;
+    height: auto;
 }
 
 /* Container styles */
 .container {
     max-width: 600px;
-    padding-bottom: 40px;
-    padding-top: 40px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -35,15 +45,17 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .15); /* Add shadow */
     margin-right: auto; /* Add margin to the right */
     margin-left: 40px; /* Add margin to the left */
-    
+    z-index: 1; /* Ensure form is above the image */
+    background-color: rgba(255, 255, 255, 0.8);
+    height: auto;
 }
 
 .row {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding-right: calc(var(--bs-gutter-x)* .5);
-    padding-left: calc(var(--bs-gutter-x)* .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
     margin-top: var(--bs-gutter-y);
 }
 
@@ -92,4 +104,3 @@ textarea {
     border-radius: 4px;
     box-sizing: border-box;
 }
-

@@ -66,10 +66,16 @@ export default function Inquiry() {
 
   return (
 
-        <div className="background">
-        <img src="https://expertcourtreports.co.uk/wp-content/uploads/2022/05/Pharmacy.jpg" alt="Upload Prescription Illustration" className="prescription-image" style={{display:''}}/>
+    <div className="background" style={{ position: 'relative' }}>
+  <img
+    src="https://www.aamc.org/sites/default/files/styles/scale_and_crop_1200_x_666/public/Article-Academic-Health-Centers-927897070.jpg?itok=v3CKK79s"
+    alt="Upload image"
+    className="image"
+    style={{ display: '' }}
+  />
+  <div className="form-overlay" style={{ position: 'absolute', top: '50px', left: '0', width: '100%', height: 'auto' }}>
       
-      <div className="container">
+      <div className="container" style={{ marginTop: '50px' }}>
       <div className="row">
       <div className="form-wrapper"> {/* Add a wrapper div for the form */}
       <h1>Inquiry Now </h1>
@@ -124,13 +130,13 @@ export default function Inquiry() {
         </form>
       </div>
       </div>
-      </div><br></br><br></br>
-
-      <div className="">
-
       </div>
+      </div>
+      <br></br><br></br>
+
       
-      <div className="map" style={{ width: '100%' }}>
+      
+      <div className="map"  style={{ width: '100%' }}>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.7450256430325!2d79.85714469999999!3d6.921054499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2591492f40fb9%3A0x2ecd89ca1174f91f!2sRatnam%20Hospital!5e0!3m2!1sen!2slk!4v1714821181728!5m2!1sen!2slk"
           width="100%"
           height="450"
@@ -141,5 +147,6 @@ export default function Inquiry() {
         </iframe>
       </div>
     </div>
+    
   );
 }
